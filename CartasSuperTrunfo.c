@@ -18,7 +18,7 @@ int main() {
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    printf("Caracteristicas da primeira cidade: \n");
+    printf("*** Caracteristicas da primeira cidade: *** \n");
     
     printf("código da carta: \n");
     scanf("%s", &codigo_carta1);
@@ -39,7 +39,7 @@ int main() {
     scanf("%d", &atracoes1);
 
     //cidade 2
-    printf("Caracteristicas da segunda cidade: \n");
+    printf("\n *** Caracteristicas da segunda cidade: *** \n");
 
     printf("código da carta: \n");
     scanf("%s", &codigo_carta2);
@@ -60,7 +60,7 @@ int main() {
     scanf("%d", &atracoes2);
 
     //cidade 3
-    printf("Caracteristicas da terceira cidade: \n");
+    printf("\n *** Caracteristicas da terceira cidade: *** \n");
 
     printf("código da carta: \n");
     scanf("%s", &codigo_carta3);
@@ -81,7 +81,7 @@ int main() {
     scanf("%d", &atracoes3);
 
     //cidade 4
-    printf("Caracteristicas da quarta cidade: \n");
+    printf("\n *** Caracteristicas da quarta cidade: *** \n");
 
     printf("código da carta: \n");
     scanf("%s", &codigo_carta4);
@@ -101,7 +101,17 @@ int main() {
     printf("Número de pontos túristicos: \n");
     scanf("%d", &atracoes4);  
     
+    //Densidade Populacional: População dividida pela área da cidade (Cálculo).
+    double den_populacional1 = populacao1 / area1;
+    double den_populacional2 = populacao2 / area2;
+    double den_populacional3 = populacao3 / area3;
+    double den_populacional4 = populacao4 / area4;
 
+    //PIB per Capita: PIB total dividido pela população (Cálcuilo).
+    double pib_per_capita1 = (int) pib1 / populacao1;
+    double pib_per_capita2 = (int) pib2 / populacao2;
+    double pib_per_capita3 = (int) pib3 / populacao3;
+    double pib_per_capita4 = (int) pib4 / populacao4;
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
@@ -114,6 +124,8 @@ int main() {
     printf("Área da cidade: %.3f km\n", area1);
     printf("PIB: %.1f bilhões\n", pib1);
     printf("Número de pontos turísticos: %d\n", atracoes1);
+    printf("Densadade poipulacional: %.2f \n", den_populacional1);
+    printf("PIB per Capita: %d \n", pib_per_capita1);
 
     // Cidade 2
     printf("-------------------------------\nCarta: %s\n", codigo_carta2);
@@ -122,6 +134,8 @@ int main() {
     printf("Área da cidade: %.3f km\n", area2);
     printf("PIB: %.1f bilhões\n", pib2);
     printf("Número de pontos turísticos: %d\n", atracoes2);
+    printf("Densadade poipulacional: %.2f \n", den_populacional2);
+    printf("PIB per Capita: %d \n", pib_per_capita2);
 
     // Cidade 3
     printf("-------------------------------\nCarta: %s\n", codigo_carta3);
@@ -130,6 +144,8 @@ int main() {
     printf("Área da cidade: %.3f km\n", area3);
     printf("PIB: %.1f bilhões\n", pib3);
     printf("Número de pontos turísticos: %d\n", atracoes3);
+    printf("Densadade poipulacional: %.2f \n", den_populacional3);
+    printf("PIB per Capita: %d \n", pib_per_capita3);
 
     // Cidade 4
     printf("-------------------------------\nCarta: %s\n", codigo_carta4);
@@ -138,6 +154,8 @@ int main() {
     printf("Área da cidade: %.3f km\n", area4);
     printf("PIB: %.1f bilhões\n", pib4);
     printf("Número de pontos turísticos: %d\n", atracoes4);
+    printf("Densadade poipulacional: %.2f \n", den_populacional4);
+    printf("PIB per Capita: %d \n", pib_per_capita4);
 
     return 0;
 
