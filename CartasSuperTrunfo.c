@@ -65,8 +65,8 @@ int main() {
     double den_populacional2 = populacao2 / area2;
 
     //PIB per Capita: PIB total dividido pela população (Cálcuilo).
-    double pib_per_capita1 = (int) pib1 / populacao1;
-    double pib_per_capita2 = (int) pib2 / populacao2;
+    double pib_per_capita1 = pib1 / (float) populacao1;
+    double pib_per_capita2 = pib2 / (float) populacao2;
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
@@ -91,6 +91,17 @@ int main() {
     printf("Número de pontos turísticos: %d\n", atracoes2);
     printf("Densadade poipulacional: %.2f \n", den_populacional2);
     printf("PIB per Capita: %f \n", pib_per_capita2);
+
+    //Mostrando o atributo que será comparado
+    printf("Comparação de cartas (Atributo: PIB per Capita): \n\n");
+    printf("Carta 1 - %s (%s): %f\n", cidade1, codigo_carta1, pib_per_capita1);
+    printf("Carta 2 - %s (%s): %f\n", cidade2, codigo_carta2, pib_per_capita2);
+    //Comparando os atributos e mostrando o resultado
+    if (pib_per_capita1 > pib_per_capita2){
+        printf("Cidade 1 (%s) venceu!", cidade1);
+    } else {
+        printf("Cidade 2 (%s) venceu!", cidade2);
+    }
 
     return 0;
 
