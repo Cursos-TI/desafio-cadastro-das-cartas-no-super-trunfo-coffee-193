@@ -65,8 +65,8 @@ int main() {
     double den_populacional2 = populacao2 / area2;
 
     //PIB per Capita: PIB total dividido pela população (Cálcuilo).
-    double pib_per_capita1 = (float) pib1 / populacao1;
-    double pib_per_capita2 = (float) pib2 / populacao2;
+    double pib_per_capita1 = (int) pib1 / populacao1;
+    double pib_per_capita2 = (int) pib2 / populacao2;
 
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
